@@ -15,7 +15,7 @@
 
 <ul>
   <% if !cart.blank? %>
-    <%= cart.map do |product| %>
+    <%= cart.each_with_index do |product| %>
         <li><%= "#{product}" %></li>
     <% end %>
   <% else %>
