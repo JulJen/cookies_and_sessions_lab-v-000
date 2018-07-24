@@ -14,7 +14,12 @@
 <h1>Added to your cart: </h1>
 
 <ul>
+  <% if cart.present? %>
     <%= cart.each do |product| %>
         <li><%= product %></li>
+  <% elsif cart.nil? %>
+    <p> No products yet. </p>
     <% end %>
+  <% end %>
+
 </ul>
