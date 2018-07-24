@@ -14,7 +14,7 @@
 <h1>Added to your cart: </h1>
 
 <ul>
-  <% if cart.present? %>
+  <% if !cart.blank? %>
     <%= cart.each do |product| %>
         <li><%= product %></li>
   <% else %>
