@@ -15,7 +15,7 @@
 
 <ul>
   <% if !cart.blank? %>
-    <%= cart.each_with_index do |product, i| %>
+    <%= cart.map_with_index do |product, i| %>
         <li><%=i + 1%>. <%=product %></li>
     <% end %>
   <% else %>
