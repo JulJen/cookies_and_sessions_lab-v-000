@@ -1,6 +1,13 @@
 <h1>Add products: </h1>
 
-<%= render partial: "form" %>
+<%= form_tag ('/add', method: :post) do %>
+  <%= text_field_tag :product %>
+
+  <br><br>
+
+  <%= submit_tag "add to cart" %>
+<% end %>
+
 
 <h1>Added to your cart: </h1>
 
