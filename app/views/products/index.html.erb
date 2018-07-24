@@ -18,7 +18,7 @@
     <%= cart.each do |product| %>
         <li><%= product %></li>
     <% end %>
-  <% elsif cart.nil? %>
+  <% else %>
     <p> No products yet. </p>
   <% end %>
 
